@@ -12,7 +12,7 @@
     $start_msg = $_ENV['START_MSG']; 
 
 if($message == "/start"){
-    send_message($chat_id,$message_id, "***Hey $firstname \nUse !bin xxxxxx to Check BIN \n$start_msg***");
+    send_message($chat_id,$message_id, "***Hey $firstname \nUse !bin yourbin to Check BIN \n$start_msg***");
 }
 
 //Bin Lookup
@@ -56,7 +56,7 @@ Level: $level
 Bank: $bank
 Country: $country $flag
 Type:$type
-Checked By @$username ***");
+Checked By @$lootwithus");
     }
 else {
     send_message($chat_id,$message_id, "***Enter Valid BIN***");
